@@ -41,6 +41,7 @@ If m2e is not there, just follow the install process here: http://eclipse.org/m2
 
 ### Steps:
 
+# Test for et-4
 1) In the command line
 ```
 git clone https://github.com/spring-projects/spring-petclinic.git
