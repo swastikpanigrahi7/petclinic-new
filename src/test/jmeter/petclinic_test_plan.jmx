@@ -9,17 +9,17 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="PETCLINIC_HOST" elementType="Argument">
             <stringProp name="Argument.name">PETCLINIC_HOST</stringProp>
-            <stringProp name="Argument.value">PETCLINIC_HOST_VALUE</stringProp>
+            <stringProp name="Argument.value">${__P(PETCLINIC_HOST,localhost)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="PETCLINIC_PORT" elementType="Argument">
             <stringProp name="Argument.name">PETCLINIC_PORT</stringProp>
-            <stringProp name="Argument.value">PETCLINIC_PORT_VALUE</stringProp>
+            <stringProp name="Argument.value">${__P(PETCLINIC_PORT,80)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="CONTEXT_WEB" elementType="Argument">
             <stringProp name="Argument.name">CONTEXT_WEB</stringProp>
-            <stringProp name="Argument.value">CONTEXT_WEB_VALUE</stringProp>
+            <stringProp name="Argument.value">${__P(CONTEXT_WEB,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -33,7 +33,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">10</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">50</stringProp>
+        <stringProp name="ThreadGroup.num_threads">500</stringProp>
         <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <longProp name="ThreadGroup.start_time">1361531541000</longProp>
         <longProp name="ThreadGroup.end_time">1361531541000</longProp>
@@ -41,7 +41,7 @@
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.delayedStart">true</boolProp>
-        <stringProp name="TestPlan.comments">Original : 50 - 10 - 10</stringProp>
+        <stringProp name="TestPlan.comments">Original : 500 - 10 - 10</stringProp>
       </ThreadGroup>
       <hashTree>
         <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Fixed time counter" enabled="true">
