@@ -50,4 +50,13 @@ public class CrashControllerTests {
             .andExpect(forwardedUrl("exception"))
             .andExpect(status().isOk());
     }
+    //added by poojitha
+    @Test
+    public void testTriggerException1() throws Exception {
+        mockMvc.perform(get("/oups"))
+            .andExpect(view().name("exception"))
+            .andExpect(model().attributeExists("exception"))
+            .andExpect(forwardedUrl("exception"))
+            .andExpect(status().isOk());
+    }
 }
