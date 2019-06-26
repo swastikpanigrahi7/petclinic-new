@@ -177,7 +177,7 @@ public class OwnerControllerTests {
     }
   //added by poojitha
     @Test
-    public void testShowOwner1() throws Exception {
+    public void testShowOwner2() throws Exception {
         mockMvc.perform(get("/owners/{ownerId}", TEST_OWNER_ID))
             .andExpect(status().isOk())
             .andExpect(model().attribute("owner", hasProperty("lastName", is("Franklin"))))
